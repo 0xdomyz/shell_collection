@@ -1,4 +1,4 @@
-collection_template
-===================
+Collection of batch file scripts
+================================
 
-template for collection repos
+WIP
