@@ -8,20 +8,26 @@ copy a.txt b.txt
 
 dir
 
+exist
+
 del
-del /s
+del /s /q
 
 echo words %varname%
 echo: 
 
 rmdir
-rmdir /s
+rmdir /s /q
+
+git add .
 
 rem
 
 set /p varname= question:
 set a=b
 set a=%1
+set pth="E:project\folder" 
+
 setLocal EnableDelayedExpansion
 
 start .
@@ -31,6 +37,9 @@ pause
 for %%i in (a b) do (
     echo asdf%%i
 )
+
+:loop
+goto loop
 
 !date!
 !time!
@@ -57,5 +66,9 @@ goto :eof
 :checkpoint
 
 if [%1]==[] echo help here
+
+echo %CD% | clip
+
+call new.bat
 
 
