@@ -63,3 +63,11 @@ while($var -lt 20){start-sleep 5}
 
 -eq
 -gt
+
+$SettingsObject = Get-Content -Path \path\to\settings.json | ConvertFrom-Json
+{
+    "link1": "asfd",
+}
+$SettingsObject.link1
+
+
