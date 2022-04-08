@@ -15,5 +15,5 @@
     find
     ps aux
     df
-    
+    sudo service postgresql restart
     
