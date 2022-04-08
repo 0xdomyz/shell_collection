@@ -16,4 +16,4 @@
     ps aux
     df
     sudo service postgresql restart
-    
+    apt -qq list awscli
