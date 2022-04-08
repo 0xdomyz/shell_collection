@@ -1,4 +1,4 @@
-Collection of batch file, powershell scripts
+Collection of shell scripts
 ============================================
 
 WIP
