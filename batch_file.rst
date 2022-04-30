@@ -36,6 +36,8 @@
 
     start .
 
+    type nul>aaa.py
+    
     pause
 
     for %%i in (a b) do (
