@@ -38,6 +38,9 @@
 
     type nul>aaa.py
     
+    mklink /D Link Target
+    mklink /H Link Target
+    
     pause
 
     for %%i in (a b) do (
