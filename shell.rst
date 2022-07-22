@@ -17,6 +17,9 @@
     df
     sudo service postgresql restart
     apt -qq list awscli
+    whoami
+    date
+    pwd
     
 rerun previous::
 
