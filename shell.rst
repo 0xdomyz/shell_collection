@@ -1,7 +1,8 @@
-::
+.. code-block:: console
 
     pwd
     ls
+    ls -lt python*
     man
     mkdir
     touch
@@ -20,9 +21,8 @@
     whoami
     date
     pwd
-    
-rerun previous::
 
+    #rerun previous:
     !!
     !ls
     !-1
