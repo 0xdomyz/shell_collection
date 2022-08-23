@@ -1,5 +1,6 @@
 .. code-block:: console
 
+    diff
     pwd
     ls
     ls -lt python*
