@@ -80,4 +80,5 @@
 
     call new.bat
 
-
+    xcopy folder1 folder2
+    robocopy folder1 folder2
