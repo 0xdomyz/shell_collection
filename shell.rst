@@ -10,6 +10,7 @@
     mv
     cp
     rm
+    rm -fr dir
     cat
     history
     clear
