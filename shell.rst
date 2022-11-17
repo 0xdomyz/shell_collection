@@ -1,27 +1,28 @@
 .. code-block:: console
 
+    apt -qq list awscli
+    cat
+    clear
+    cp
     diff
+    df
+    date
+    export
+    find
+    history
     pwd
     ls
     ls -lt python*
+    ln
     man
     mkdir
-    touch
     mv
-    cp
-    rm
-    cat
-    history
-    clear
-    ln
-    find
-    ps aux
-    df
-    sudo service postgresql restart
-    apt -qq list awscli
-    whoami
-    date
     pwd
+    ps aux
+    rm
+    sudo service postgresql restart
+    touch
+    whoami
 
     #rerun previous:
     !!
