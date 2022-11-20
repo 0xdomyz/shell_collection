@@ -14,6 +14,7 @@
     ls
     ls -lt python*
     ln
+    lsb_release -a
     man
     mkdir
     mv
