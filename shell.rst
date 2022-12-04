@@ -9,6 +9,7 @@
     diff
     df
     date
+    dpkg -L tomcat7
     
     export
     exit
