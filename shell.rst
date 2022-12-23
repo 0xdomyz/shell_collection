@@ -20,6 +20,7 @@
     
     ls
     ls -lt python*
+    lsof -i -n
     ln
     lsb_release -a
     
@@ -27,7 +28,10 @@
     mkdir
     mv
     
+    netstat -an
+    
     pwd
+    ping -c 3 127.0.0.1
     ps aux
     
     rm
@@ -35,6 +39,7 @@
     sudo service postgresql restart
     
     touch
+    tshark -i lo0 'tcp port 65432'
     
     uname -a
 
