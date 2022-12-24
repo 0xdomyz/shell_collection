@@ -78,17 +78,21 @@ generic
 
     lsb_release -a
 
+    lsof -i -n
+
     #m
     man
     mkdir -vp a b
     mv -v a b
     
     #n
-    
+    netstat -an
+
     #o
     
     #p
     pwd
+    ping -c 3 127.0.0.1
     ps aux
     
     #q
@@ -105,6 +109,7 @@ generic
     touch
     tree
     tail -n 10
+    tshark -i lo0 'tcp port 65432'
     
     #u
     uname -a
