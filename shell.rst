@@ -104,6 +104,7 @@ generic
     
     #s
     sudo service postgresql restart
+    ls | sort
     
     #t
     touch
@@ -157,7 +158,31 @@ expansion
     echo alpha_{d..a}
 
     echo a{A{1,2},B{3,4}}
- 
+
+    #cmd
+    echo $(ls)
+    ls -l $(which cp)
+
+Escape
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+    echo $USER
+    echo ${USER}
+    echo \$USER
+
+    echo \\
+    echo a\ {1..2}
+    echo \&
+    echo \!
+
+    touch a\ file\ .csv
+    touch "a file .csv"
+    
+    echo "${USER} $(cal)"
+    echo '${USER} $(cal)'
+
 Other
 ^^^^^^^^^^^^^^^^^^
 
