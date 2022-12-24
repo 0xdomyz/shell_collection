@@ -1,61 +1,171 @@
+generic
+^^^^^^^^^^^^
+
 .. code-block:: console
 
+    #a
     apt -qq list awscli
+    apt show tree
 
+    #b
+
+    #c
     cat
-    clear
-    cp
+    cal
+
+    cd /
+    cd ~
+    cd /home/user
     
-    diff
+    clear
+    cp file b/
+    cp -r a b
+
+    #d
+    diff file file2
     df
     date
     dpkg -L tomcat7
     
+    #e
+    echo $HOME
+    echo a b
+    echo "sdf" > file
+    echo "sdf" >> file
+    echo "sdf
+    sdf
+    "
+    echo -e "sdf\tsdf"
+    echo -e "sdf\nsdf"
+
     export
     exit
     
+    #f
     find
+    file /usr/bin/vi
     
+    #g
+    ls /usr/bin | grep -ivc python
+    man rm | grep -e "-r"
+    
+    #h
     history
+    head -n 10 file
     
-    ls
+    #i
+    
+    #j
+    
+    #k
+    
+    #l
+    less -N file
+    space, b, q
+    
+    ls ~
+    ls .
+    ls ..
+    ls -la
+    ls -lA
     ls -lt python*
-    ln
+    ls -lAh
+
+    ln file file2
+    ln -s file file3
+    ln ../file
+    ln -s file dir
+
     lsb_release -a
-    
+
+    #m
     man
-    mkdir
-    mv
+    mkdir -vp a b
+    mv -v a b
     
+    #n
+    
+    #o
+    
+    #p
     pwd
     ps aux
     
-    rm
+    #q
     
+    #r
+    rm
+    rm -iv file
+    rm -r dir
+    
+    #s
     sudo service postgresql restart
     
+    #t
     touch
+    tree
+    tail -n 10
     
+    #u
     uname -a
-
+    
+    #v
+    
+    #w
     whoami
-
+    wc -l file
+    wc -w file
+    
+    #x
+    
+    #y
     sudo yum -y update
+    
+    #z
 
-rerun previous
+expansion
 ^^^^^^^^^^^^^^^^^^
-::
 
+.. code-block:: console
+
+    #*
+    echo *
+    file*
+
+    #~
+    echo ~
+    echo ~user
+    ls ~
+
+    #$
+    echo $(( 7 + 3 ))
+    echo integer part $(( 7 / 3 ))
+    echo remainder $(( 7 % 3 ))
+    echo exponentiation $(( 7 ** 3 ))
+    echo nest $(( 7 + 2*3 ))
+
+    #brace
+    echo list: pre_{a,b,c}_post
+    echo {a,b,c}_post
+    echo nbr_{1..5}
+    echo nbr_{01..13}
+    echo alpha_{d..a}
+
+    echo a{A{1,2},B{3,4}}
+ 
+Other
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
+
+    #rerun
     !!
     !ls
     !-1
     history | grep -i "source"
     !1000:p
 
-SSH
-^^^^^^^^^^
-
-.. code-block:: console
+    #SSH
 
     ssh-keygen -C {email} -f ~/.ssh/id_rsa_example
     cat ~/.ssh/id_rsa_example.pub
