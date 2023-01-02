@@ -21,6 +21,9 @@ generic
     cp file b/
     cp -r a b
 
+    chown root:user file
+    chmod 4 file
+
     #d
     diff file file2
     df
