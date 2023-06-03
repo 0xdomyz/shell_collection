@@ -51,6 +51,9 @@ generic
     #g
     ls /usr/bin | grep -ivc python
     man rm | grep -e "-r"
+    getent passwd | grep -i "user"
+    getent group
+    sudo groupadd newgroup
     
     #h
     history
@@ -104,6 +107,7 @@ generic
     rm
     rm -iv file
     rm -r dir
+    rm -rf dir
     
     #s
     sudo service postgresql restart
@@ -117,6 +121,10 @@ generic
     
     #u
     uname -a
+    sudo useradd newuser
+    sudo useradd -g newgroup newuser
+    sudo userdel newuser
+    sudo usermod -a -G newgroup newuser
     
     #v
     
