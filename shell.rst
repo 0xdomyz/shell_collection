@@ -1,15 +1,14 @@
 generic
 ^^^^^^^^^^^^
 
-.. code-block:: console
+a::
 
-    #a
     apt -qq list awscli
     apt show tree
 
-    #b
+b::
 
-    #c
+c::
     cat
     cal
 
@@ -26,7 +25,7 @@ generic
 
     curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
 
-    #d
+d::
     diff file file2
     df
     date
