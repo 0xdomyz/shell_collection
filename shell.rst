@@ -54,6 +54,8 @@ generic
     ls /usr/bin | grep -ivc python
     man rm | grep -e "-r"
     getent passwd | grep -i "user"
+    echo "asdfdas adsf tfv-56723 asdf aaa-767678686" | grep '[a-z]\{3\}-[0-9]\{5\}'
+
     getent group
     sudo groupadd newgroup
     
