@@ -1,16 +1,22 @@
 generic
 ^^^^^^^^^^^^
 
-a::
+a
+
+.. code-block:: console
 
     apt -qq list awscli
     apt show tree
 
-b::
+b
+
+.. code-block:: console
 
     #
 
-c::
+c
+
+.. code-block:: console
 
     cat
     cal
@@ -28,7 +34,9 @@ c::
 
     curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
 
-d::
+d
+
+.. code-block:: console
 
     diff file file2
     df
