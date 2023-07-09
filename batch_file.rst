@@ -19,6 +19,7 @@
 
     echo words %varname%
     echo: 
+    echo "%cd% %date% %time%" >> "log.log"
 
     rmdir
     rmdir /s /q
