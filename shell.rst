@@ -40,11 +40,15 @@ d
 
     diff file file2
     df
+    df -h
     date
     dpkg -L tomcat7
     du -aBM | sort -nr | head -n 20 # 20 largest files
     
-    #e
+e
+
+.. code-block:: console
+
     echo $HOME
     echo a b
     echo "sdf" > file
@@ -58,30 +62,53 @@ d
     export
     exit
     
-    #f
+f
+
+.. code-block:: console
+
     find
     file /usr/bin/vi
+    free -h
     
-    #g
+g
+
+.. code-block:: console
+
     ls /usr/bin | grep -ivc python
     man rm | grep -e "-r"
     getent passwd | grep -i "user"
     echo "asdfdas adsf tfv-56723 asdf aaa-767678686" | grep '[a-z]\{3\}-[0-9]\{5\}'
+    df --help | grep '\-h'
 
     getent group
     sudo groupadd newgroup
     
-    #h
+h
+
+.. code-block:: console
+
     history
     head -n 10 file
     
-    #i
+i
+
+.. code-block:: console
+
     
-    #j
+j
+
+.. code-block:: console
+
     
-    #k
+k
+
+.. code-block:: console
+
     
-    #l
+l
+
+.. code-block:: console
+
     less -N file
     space, b, q
     
@@ -102,59 +129,104 @@ d
 
     lsof -i -n
 
-    #m
+m
+
+.. code-block:: console
+
     man
     mkdir -vp a b
     mv -v a b
     
-    #n
+n
+
+.. code-block:: console
+
     netstat -an
 
-    #o
+o
+
+.. code-block:: console
+
     
-    #p
+p
+
+.. code-block:: console
+
     pwd
     ping -c 3 127.0.0.1
     ps aux
     
-    #q
+q
+
+.. code-block:: console
+
     
-    #r
+r
+
+.. code-block:: console
+
     rm
     rm -iv file
     rm -r dir
     rm -rf dir
     
-    #s
+s
+
+.. code-block:: console
+
     sudo service postgresql restart
     ls | sort
-    
-    #t
+
+    ssh pi2@192.168.0.251 -p 22
+    exit
+
+t
+
+.. code-block:: console
+
     touch
     tree
     tail -n 10
     tshark -i lo0 'tcp port 65432'
     
-    #u
+u
+
+.. code-block:: console
+
     uname -a
     sudo useradd newuser
     sudo useradd -g newgroup newuser
     sudo userdel newuser
     sudo usermod -a -G newgroup newuser
     
-    #v
+v
+
+.. code-block:: console
+
     
-    #w
+w
+
+.. code-block:: console
+
     whoami
     wc -l file
     wc -w file
     
-    #x
+x
+
+.. code-block:: console
+
     
-    #y
+y
+
+.. code-block:: console
+
     sudo yum -y update
     
-    #z
+z
+
+.. code-block:: console
+
 
 expansion
 ^^^^^^^^^^^^^^^^^^
