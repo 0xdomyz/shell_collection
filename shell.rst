@@ -154,6 +154,7 @@ p
 
     pwd
     ping -c 3 127.0.0.1
+    ping raspberrypi -4
     ps aux
     
 q
