@@ -42,6 +42,7 @@ d
     df
     date
     dpkg -L tomcat7
+    du -aBM | sort -nr | head -n 20 # 20 largest files
     
     #e
     echo $HOME
