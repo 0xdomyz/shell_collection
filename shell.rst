@@ -94,6 +94,8 @@ i
 
 .. code-block:: console
 
+    ifconfig
+    iwconfig
     
 j
 
