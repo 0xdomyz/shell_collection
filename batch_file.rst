@@ -1,58 +1,6 @@
-::
+symbols
 
-    @echo off
-    pushd "%~dp0"
-    popd
-
-    cd example_dir
-
-    copy a.txt b.txt
-
-    dir
-
-    exist
-
-    findstr
-
-    del
-    del /s /q
-
-    echo words %varname%
-    echo: 
-    echo "%cd% %date% %time%" >> "log.log"
-
-    rmdir
-    rmdir /s /q
-
-    git add .
-
-    rem
-
-    set /p varname= question:
-    set a=b
-    set a=%1
-    set pth="E:project\folder" 
-
-    setLocal EnableDelayedExpansion
-
-    start .
-
-    type nul>aaa.py
-    
-    mklink /D Link Target
-    mklink /H Link Target
-    
-    pause
-
-    for %%i in (a b) do (
-        echo asdf%%i
-    )
-
-    :loop
-    goto loop
-
-    !date!
-    !time!
+.. code-block:: console
 
     %%0
     %%1
@@ -68,18 +16,181 @@
 
     %varname%
 
+    !date!
+    !time!
+
     @file_name
 
     a&b
 
-    goto :eof
-    :checkpoint
+a
 
-    if [%1]==[] echo help here
+.. code-block:: console
 
-    echo %CD% | clip
+b
+
+.. code-block:: console
+
+c
+
+.. code-block:: console
+
+    cd example_dir
+    copy a.txt b.txt
 
     call new.bat
 
-    xcopy folder1 folder2
+    :checkpoint
+
+d
+
+.. code-block:: console
+
+    del
+    del /s /q
+
+    dir
+
+e
+
+.. code-block:: console
+
+    @echo off
+
+    echo words %varname%
+    echo: 
+    echo "%cd% %date% %time%" >> "log.log"
+
+    exist
+
+    echo %CD% | clip
+
+f
+
+.. code-block:: console
+
+    findstr
+
+    for %%i in (a b) do (
+        echo asdf%%i
+    )
+
+
+g
+
+.. code-block:: console
+
+    git add .
+
+    goto :eof
+    goto loop
+    :loop
+
+h
+
+.. code-block:: console
+
+i
+
+.. code-block:: console
+
+    if [%1]==[] echo help here
+
+j
+
+.. code-block:: console
+
+k
+
+.. code-block:: console
+
+l
+
+.. code-block:: console
+
+m
+
+.. code-block:: console
+
+    mklink /D Link Target
+    mklink /H Link Target
+
+n
+
+.. code-block:: console
+
+o
+
+.. code-block:: console
+
+p
+
+.. code-block:: console
+
+    pushd "%~dp0"
+    popd
+
+    pause
+
+q
+
+.. code-block:: console
+
+r
+
+.. code-block:: console
+
     robocopy folder1 folder2
+
+    rmdir
+    rmdir /s /q
+
+    rem
+
+s
+
+.. code-block:: console
+
+    set /p varname= question:
+    set a=b
+    set a=%1
+    set pth="E:project\folder" 
+
+    setLocal EnableDelayedExpansion
+
+    start .
+
+t
+
+.. code-block:: console
+
+    type nul>aaa.py
+
+u
+
+.. code-block:: console
+
+v
+
+.. code-block:: console
+
+w
+
+.. code-block:: console
+
+x
+
+.. code-block:: console
+
+    xcopy folder1 folder2
+
+y
+
+.. code-block:: console
+
+z
+
+.. code-block:: console
+
+
+
