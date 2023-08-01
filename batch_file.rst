@@ -141,6 +141,7 @@ r
 .. code-block:: console
 
     robocopy folder1 folder2
+    robocopy folder1 folder2 /S
 
     rmdir
     rmdir /s /q
