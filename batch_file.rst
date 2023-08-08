@@ -157,6 +157,10 @@ s
     set a=%1
     set pth="E:project\folder" 
 
+    set root=C:\Program Files
+    set combined="%root%\MyApp"
+    echo %combined%
+
     setLocal EnableDelayedExpansion
 
     start .
