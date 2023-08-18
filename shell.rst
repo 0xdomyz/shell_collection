@@ -1,6 +1,15 @@
 generic
 ^^^^^^^^^^^^
 
+symbols
+
+.. code-block:: console
+
+    #The `!` character is not used to run the command in a separate session
+    #but rather to run the command as a shell command, rather than as a command
+    #within the current shell session.
+    !git add -A && git commit -m    
+
 a
 
 .. code-block:: console
