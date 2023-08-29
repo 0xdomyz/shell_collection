@@ -65,6 +65,8 @@ e
 
     echo %CD% | clip
 
+    path:;=&echo(
+
 f
 
 .. code-block:: console
@@ -164,6 +166,12 @@ s
     setLocal EnableDelayedExpansion
 
     start .
+
+    #substitution syntax example
+    set myvar=hello world
+    #%variable:search=replace%
+    echo %myvar:world=GitHub Copilot%
+    echo %myvar:o=0%
 
 t
 
