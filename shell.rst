@@ -197,11 +197,12 @@ t
 
 .. code-block:: console
 
+    tar --help | grep '\-x'
     touch
     tree
     tail -n 10
     tshark -i lo0 'tcp port 65432'
-    
+
 u
 
 .. code-block:: console
