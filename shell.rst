@@ -41,6 +41,7 @@ c
     chown root:user file
     chmod 4 file
 
+    # Use curl to test APIs, download files, and upload files to a server.
     curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
 
 d
@@ -223,7 +224,10 @@ w
     whoami
     wc -l file
     wc -w file
-    
+
+    # Use wget to download entire websites, download files, and mirror websites.
+    wget www.www.com
+
 x
 
 .. code-block:: console
