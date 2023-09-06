@@ -198,6 +198,7 @@ t
 .. code-block:: console
 
     tar --help | grep '\-x'
+    tar --bzip2 -xf asdfdas.bz2
     touch
     tree
     tail -n 10
