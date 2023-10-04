@@ -69,7 +69,7 @@ e
     echo -e "sdf\tsdf"
     echo -e "sdf\nsdf"
 
-    export
+    export JUPYTER_PLATFORM_DIRS=1
     exit
     
 f
