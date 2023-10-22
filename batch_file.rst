@@ -130,6 +130,7 @@ p
 .. code-block:: console
 
     pushd "%~dp0"
+    pushd /?
     popd
 
     pause
