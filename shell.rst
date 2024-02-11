@@ -1,3 +1,13 @@
+contents
+========================
+
+- `generic`_
+- `expansion`_
+- `escape`_
+- `rerun`_
+- `ssh`_
+
+
 generic
 ^^^^^^^^^^^^
 
@@ -10,20 +20,20 @@ symbols
     #within the current shell session.
     !git add -A && git commit -m    
 
-a
+a:
 
 .. code-block:: console
 
     apt -qq list awscli
     apt show tree
 
-b
+b:
 
 .. code-block:: console
 
     #
 
-c
+c:
 
 .. code-block:: console
 
@@ -44,7 +54,7 @@ c
     # Use curl to test APIs, download files, and upload files to a server.
     curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
 
-d
+d:
 
 .. code-block:: console
 
@@ -55,7 +65,7 @@ d
     dpkg -L tomcat7
     du -aBM | sort -nr | head -n 20 # 20 largest files
     
-e
+e:
 
 .. code-block:: console
 
@@ -72,7 +82,7 @@ e
     export JUPYTER_PLATFORM_DIRS=1
     exit
     
-f
+f:
 
 .. code-block:: console
 
@@ -80,7 +90,7 @@ f
     file /usr/bin/vi
     free -h
     
-g
+g:
 
 .. code-block:: console
 
@@ -93,35 +103,42 @@ g
     getent group
     sudo groupadd newgroup
     
-h
+h:
 
 .. code-block:: console
 
     history
     head -n 10 file
     
-i
+i:
 
 .. code-block:: console
 
     ifconfig
     iwconfig
     
-j
+j:
 
 .. code-block:: console
 
+    ls
     
-k
+k:
 
 .. code-block:: console
 
+    kill -l
+    kill -9 1234
+    killall -9 process
     
-l
+l:
 
 .. code-block:: console
 
+    less file
+    more file
     less -N file
+
     space, b, q
     
     ls ~
@@ -141,7 +158,7 @@ l
 
     lsof -i -n
 
-m
+m:
 
 .. code-block:: console
 
@@ -149,18 +166,19 @@ m
     mkdir -vp a b
     mv -v a b
     
-n
+n:
 
 .. code-block:: console
 
     netstat -an
 
-o
+o:
 
 .. code-block:: console
 
+    openvpn --help
     
-p
+p:
 
 .. code-block:: console
 
@@ -169,12 +187,13 @@ p
     ping raspberrypi -4
     ps aux
     
-q
+q:
 
 .. code-block:: console
 
-    
-r
+    quota
+
+r:
 
 .. code-block:: console
 
@@ -183,7 +202,7 @@ r
     rm -r dir
     rm -rf dir
     
-s
+s:
 
 .. code-block:: console
 
@@ -193,7 +212,7 @@ s
     ssh pi2@192.168.0.251 -p 22
     exit
 
-t
+t:
 
 .. code-block:: console
 
@@ -201,10 +220,14 @@ t
     tar --bzip2 -xf asdfdas.bz2
     touch
     tree
-    tail -n 10
+
+    tail -n 10 file
+    tail -f file
+    tail -f /var/log/syslog
+
     tshark -i lo0 'tcp port 65432'
 
-u
+u:
 
 .. code-block:: console
 
@@ -214,12 +237,13 @@ u
     sudo userdel newuser
     sudo usermod -a -G newgroup newuser
     
-v
+v:
 
 .. code-block:: console
 
-    
-w
+    vim file
+
+w:
 
 .. code-block:: console
 
@@ -230,20 +254,28 @@ w
     # Use wget to download entire websites, download files, and mirror websites.
     wget www.www.com
 
-x
+x:
 
 .. code-block:: console
 
-    
-y
+    ls | xargs echo
+    ls | xargs rm
+
+y:
 
 .. code-block:: console
 
     sudo yum -y update
     
-z
+z:
 
 .. code-block:: console
+
+    zcat file.gz
+    zip -r file.zip dir
+
+shell shortcuts
+^^^^^^^^^^^^^^^^^^
 
 
 expansion
@@ -266,6 +298,12 @@ expansion
     echo remainder $(( 7 % 3 ))
     echo exponentiation $(( 7 ** 3 ))
     echo nest $(( 7 + 2*3 ))
+    
+    #subshell
+    echo $USER
+    echo ${USER}
+    echo \$USER
+    echo $(pwd)
 
     #brace
     echo list: pre_{a,b,c}_post
@@ -280,7 +318,7 @@ expansion
     echo $(ls)
     ls -l $(which cp)
 
-Escape
+escape
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
@@ -300,19 +338,21 @@ Escape
     echo "${USER} $(cal)"
     echo '${USER} $(cal)'
 
-Other
+rerun
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: console
 
-    #rerun
     !!
     !ls
     !-1
     history | grep -i "source"
     !1000:p
 
-    #SSH
+ssh
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: console
 
     ssh-keygen -C {email} -f ~/.ssh/id_rsa_example
     cat ~/.ssh/id_rsa_example.pub
