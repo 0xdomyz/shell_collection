@@ -16,3 +16,10 @@ pop-Location
 
 # ls
 Get-ChildItem -Path .\
+Get-ChildItem -Force
+
+# mkdir
+New-Item -ItemType Directory -Path .\new_dir
+
+# rmdir
+Remove-Item -Path .\new_dir -Recurse
