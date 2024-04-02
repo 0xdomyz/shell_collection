@@ -373,18 +373,5 @@ rerun
     history | grep -i "source"
     !1000:p
 
-ssh
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-    ssh-keygen -C {email} -f ~/.ssh/id_rsa_example
-    cat ~/.ssh/id_rsa_example.pub
-
-    ls -l ~/.ssh/id_rsa_example*
-    cat ~/.ssh/id_rsa_example
-
-    ssh -i ~/.ssh/id_rsa_example ec2-user@{numbers}.compute-1.amazonaws.com
-    ssh -i ~/.ssh/id_rsa_example ec2-user@{ip}
 
 
