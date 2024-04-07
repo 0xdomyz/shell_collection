@@ -31,6 +31,8 @@ a:
     awk '{print $1}' file
     awk -F: '{print $1}' /etc/passwd
 
+    alias ll='ls -l'
+
 b:
 
 .. code-block:: console
@@ -68,6 +70,7 @@ d:
     date
     dpkg -L tomcat7
     du -aBM | sort -nr | head -n 20 # 20 largest files
+    du -sh .
     
 e:
 
@@ -215,6 +218,9 @@ s:
 
     ssh pi2@192.168.0.251 -p 22
     exit
+
+    eval $(ssh-agent -s)
+    ssh-add -l
 
 t:
 
