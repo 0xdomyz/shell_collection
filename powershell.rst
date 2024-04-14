@@ -1,5 +1,10 @@
 ::
 
+    #r
+    remove-item -path .\git_examples\ -r -force
+
+::
+
     if (!$args[0] -or !$args[1]) {
         write-host 'help'
         Exit
