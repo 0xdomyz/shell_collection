@@ -1,7 +1,11 @@
 ::
 
+    #c
+    Compress-Archive -Path $sourceFile -DestinationPath $destinationFile
+
     #r
     remove-item -path .\git_examples\ -r -force
+
 
 ::
 
