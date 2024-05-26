@@ -1,4 +1,4 @@
-::
+w::
 
     #c
     Compress-Archive -Path $sourceFile -DestinationPath $destinationFile
