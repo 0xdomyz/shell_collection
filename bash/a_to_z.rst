@@ -1,25 +1,18 @@
-contents
-========================
-
-- `generic`_
-- `shell shortcuts`_
-- `expansion`_
-- `escape`_
-- `rerun`_
-- `ssh`_
-
-
-generic
-^^^^^^^^^^^^
-
-symbols
+A-Z
+-----------------
 
 .. code-block:: console
 
-    #The `!` character is not used to run the command in a separate session
-    #but rather to run the command as a shell command, rather than as a command
-    #within the current shell session.
-    !git add -A && git commit -m    
+    !git add -A && git commit -m
+
+    # rerun
+    !!
+    !ls
+    !-1
+    history | grep -i "source"
+    !1000:p
+
+    #!/bin/bash
 
 a:
 
@@ -96,6 +89,8 @@ f:
     find
     file /usr/bin/vi
     free -h
+
+    find . -type f -exec du {} \; |
     
 g:
 
@@ -215,12 +210,15 @@ s:
 
     sudo service postgresql restart
     ls | sort
+    sort -n |
 
     ssh pi2@192.168.0.251 -p 22
     exit
 
     eval $(ssh-agent -s)
     ssh-add -l
+
+    sleep 1m
 
 t:
 
@@ -283,101 +281,5 @@ z:
 
     zcat file.gz
     zip -r file.zip dir
-
-shell shortcuts
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: text
-
-    Ctrl + C   # Kill the current process
-    Ctrl + D   # Exit the current shell
-    Ctrl + K   # Cut text from the cursor to the end of the line
-    Ctrl + U   # Cut text from the cursor to the beginning of the line
-    Ctrl + L   # Clear the screen
-    Ctrl + R   # Search through the command history
-    Ctrl + W   # Delete the word before the cursor
-    Ctrl + Y   # Paste the most recently cut text
-
-    Ctrl + Z   # Suspend the current process
-
-    Ctrl + A   # Move the cursor to the beginning of the line
-    Ctrl + E   # Move the cursor to the end of the line
-
-    Alt + F    # Move the cursor forward one word
-    Alt + B    # Move the cursor backward one word
-
-    Ctrl + X + Ctrl + E   # Open an editor to write a long, complex, or multi-line command
-
-expansion
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-    #*
-    echo *
-    file*
-
-    #~
-    echo ~
-    echo ~user
-    ls ~
-
-    #$
-    echo $(( 7 + 3 ))
-    echo integer part $(( 7 / 3 ))
-    echo remainder $(( 7 % 3 ))
-    echo exponentiation $(( 7 ** 3 ))
-    echo nest $(( 7 + 2*3 ))
-    
-    #subshell
-    echo $USER
-    echo ${USER}
-    echo \$USER
-    echo $(pwd)
-
-    #brace
-    echo list: pre_{a,b,c}_post
-    echo {a,b,c}_post
-    echo nbr_{1..5}
-    echo nbr_{01..13}
-    echo alpha_{d..a}
-
-    echo a{A{1,2},B{3,4}}
-
-    #cmd
-    echo $(ls)
-    ls -l $(which cp)
-
-escape
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-    echo $USER
-    echo ${USER}
-    echo \$USER
-
-    echo \\
-    echo a\ {1..2}
-    echo \&
-    echo \!
-
-    touch a\ file\ .csv
-    touch "a file .csv"
-    
-    echo "${USER} $(cal)"
-    echo '${USER} $(cal)'
-
-rerun
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: console
-
-    !!
-    !ls
-    !-1
-    history | grep -i "source"
-    !1000:p
-
 
 
