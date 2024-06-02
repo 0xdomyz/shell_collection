@@ -44,8 +44,13 @@ c:
     cd /home/user
     
     clear
-    cp file b/
-    cp -r a b
+
+    cp
+    cp file file2
+    cp file folder # this may create a file named folder
+    cp file folder/
+    cp -r folder/ folder2 # contents of folder only
+    cp -r folder folder2 
 
     chown root:user file
     chmod 4 file
@@ -62,8 +67,12 @@ d:
     df -h
     date
     dpkg -L tomcat7
-    du -aBM | sort -nr | head -n 20 # 20 largest files
+
+    du
+    # 20 largest files
+    du -aBM | sort -nr | head -n 20 
     du -sh .
+    Du -h -d 2 | sort -h
     
 e:
 
@@ -165,7 +174,10 @@ m:
 .. code-block:: console
 
     man
-    mkdir -vp a b
+
+    mkdir folder 
+    mkdir -P folder # parents
+    mkdir -vp a b # verbose, parents
     mv -v a b
     
 n:
@@ -185,6 +197,8 @@ p:
 .. code-block:: console
 
     pwd
+    pwd -P
+
     ping -c 3 127.0.0.1
     ping raspberrypi -4
     ps aux
@@ -281,5 +295,7 @@ z:
 
     zcat file.gz
     zip -r file.zip dir
+    
+    Gunzip
 
 
