@@ -3,6 +3,9 @@ Set-Content -Path .\test.txt -Value "Hello, World!"
 $content = Get-Content -Path .\test.txt
 Write-Output $content
 
+# touch a file
+new-item test.txt
+
 # Rename the file
 Rename-Item -Path .\test.txt -NewName test2.txt
 
