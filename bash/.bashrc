@@ -3,6 +3,6 @@ alias ...='cd ../..'
 alias c='cd'
 alias cl='clear'
 alias l='ls -lah'
+alias s8='sleep 8h'
 alias t='tree -L'
 alias tt='tree -L 3'
-
