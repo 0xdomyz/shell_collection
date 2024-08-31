@@ -3,6 +3,8 @@ Set-Content -Path .\test.txt -Value "Hello, World!"
 $content = Get-Content -Path .\test.txt
 Write-Output $content
 
+"running: $currentDateTime" | Out-File -FilePath "path/log.txt" -Append
+
 # touch a file
 new-item test.txt
 
