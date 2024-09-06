@@ -1,24 +1,22 @@
-#*
-echo *
-file*
+# expansion
+name="b"
+echo "aaa $name $name" 
 
-#~
-echo ~
-echo ~user
-ls ~
+# evaluate arithmetics 
+echo result is: $(( 7 % 3 + 7 / 3))
+echo result is: $(( 7 * 3.1 ))
 
-#$
-echo $(( 7 + 3 ))
-echo integer part $(( 7 / 3 ))
-echo remainder $(( 7 % 3 ))
-echo exponentiation $(( 7 ** 3 ))
-echo nest $(( 7 + 2*3 ))
+# assignment
+name=$1
+echo "aaa $name"
 
 #subshell
 echo $USER
 echo ${USER}
 echo \$USER
 echo $(pwd)
+echo $(ls)
+ls -l $(which cp)
 
 #brace
 echo list: pre_{a,b,c}_post
@@ -29,6 +27,4 @@ echo alpha_{d..a}
 
 echo a{A{1,2},B{3,4}}
 
-#cmd
-echo $(ls)
-ls -l $(which cp)
+
