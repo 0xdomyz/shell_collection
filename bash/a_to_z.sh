@@ -4,7 +4,14 @@
 # sumbols
 #################
 
-!git add -A && git commit -m
+# * is wildcard
+echo *
+file*
+
+#~
+echo ~
+echo ~user
+ls ~
 
 # rerun
 !!
