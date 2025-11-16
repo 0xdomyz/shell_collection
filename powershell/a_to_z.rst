@@ -2,6 +2,10 @@ c::
 
     Compress-Archive -Path $sourceFile -DestinationPath $destinationFile
 
+f::
+
+    ls | findstr
+
 g::
 
     get-process -id 0000
@@ -21,6 +25,7 @@ r::
 s::
 
     select-object -first 10
+    stop-process -id 0000
 
 t::
 
