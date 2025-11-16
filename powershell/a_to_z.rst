@@ -1,14 +1,35 @@
-w::
-
-    where.exe
-
 c::
 
     Compress-Archive -Path $sourceFile -DestinationPath $destinationFile
 
+g::
+
+    get-process -id 0000
+
+i::
+
+    (Invoke-WebRequest -Uri "https://api.ipify.org").Content
+
+n:: 
+
+    netstat -aon
+
 r::
 
     remove-item -path .\git_examples\ -r -force
+
+s::
+
+    select-object -first 10
+
+t::
+
+    Test-NetConnection -ComputerName ec2-00-000-00-000.compute-1.amazonaws.com -Port 22
+
+w::
+
+    where.exe
+
 
 others::
 
