@@ -30,6 +30,7 @@ s::
 t::
 
     Test-NetConnection -ComputerName ec2-00-000-00-000.compute-1.amazonaws.com -Port 22
+    tree /f /a | Select-String -NotMatch "\.pyc$|__pycache__"
 
 w::
 
